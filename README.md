@@ -12,7 +12,6 @@ Product Listing Page: Displays products in a responsive grid that switches betwe
 Product Detail Page: Provides detailed information about a selected product.
 
 Shopping Cart Page: Allows users to view and manage items added to their cart.​
-YouTube
 
 🛠️ Technologies Used:
 
