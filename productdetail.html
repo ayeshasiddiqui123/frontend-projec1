@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    /* Header styles */
+header {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 70px;
+}
+
+nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E40AF;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-container button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-icons a {
+    color: #4B5563;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-icons a:hover {
+    color: #1E40AF;
+}
+.RecomendedItems-section {
+    width: 98vw;
+    margin: 0 auto;
+    background: #f3f3f3;
+    padding: 2rem 0;
+}
+
+.RecomendedItems-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    text-align: left; /* Heading aligned left */
+    padding: 0 2rem;
+}
+
+.RecomendedItems-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    gap: 2rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.RecomendedItems-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.RecomendedItems-card:hover {
+    transform: translateY(-5px);
+}
+
+.RecomendedItems-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.RecomendedItems-card h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #56B728;
+}
+
+.RecomendedItems-card p {
+    color: #111827;
+    font-size: 0.875rem;
+}
+
+</style>
+  <!-- Header -->
+  <header>
+    <nav>
+        <div class="logo">Store</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button>   
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="nav-icons">
+            <a href="web.html" title="Home">
+                <i class="fas fa-home"></i> Home
+            </a>
+
+            <a href="message.html" title="Message">
+                <i class="fas fa-envelope"></i> Message
+            </a>
+
+            <a href="productdetail.html" title="Orders">
+                <i class="fas fa-box-open"></i> Orders
+            </a>
+            
+            <a href="mycart.html" title="My Cart">
+                <i class="fas fa-shopping-cart"></i> My Cart
+            </a>
+        </div>
+    </nav>
+</header>
+<body style="font-family: Arial, sans-serif; background-color: #e6e3e3; margin: 0; padding: 0;">
+
+  <div style="max-width: 1200px; margin: auto; padding: 20px; background-color: white;">
+
+    <!-- Breadcrumb -->
+    <p style="font-size: 14px; color: #888;margin-top: 50px;">Home > Clothing > Men's wear > Summer clothing</p>
+
+    <!-- Product Section -->
+    <div style="display: flex; gap: 20px;">
+
+      <!-- Product Images -->
+      <div style="flex: 1;">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/112/690/small_2x/black-t-shirt-mockup-isolated-on-transparent-background-ai-generative-png.png" style="width: 100%; border: 1px ;">
+        <div style="margin-top: 10px; display: flex; gap: 5px;">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/027/112/690/small_2x/black-t-shirt-mockup-isolated-on-transparent-background-ai-generative-png.png"style="width: 50px;height:40px; ">
+          <img src="https://w7.pngwing.com/pngs/881/62/png-transparent-black-t-shirt-t-shirt-black-model-thumbnail.png" style="width: 50px;height:40px; ">
+          <img src="https://png.pngtree.com/png-vector/20250117/ourlarge/pngtree-black-t-shirt-folded-in-isolation-png-image_15232612.png" style="width: 50px;height:40px; ">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/027/291/073/small/black-short-sleeve-t-shirt-back-view-for-mockup-purposes-ai-generated-free-png.png" style="width: 50px;height:40px; ">
+          <img src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-black-t-shirt-hanging-on-a-hanger-so-that-you-see-png-image_12785768.png" style="width: 50px;height:40px; ">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/049/861/863/small_2x/close-up-of-black-t-shirt-label-mockup-on-isolated-background-png.png" style="width: 50px;height:40px; ">
+         
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div style="flex: 2;">
+        <p style="color: green; font-size: 14px;">In stock</p>
+        <h2 style="margin: 5px 0;">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+        <p style="color: #ff9900; font-size: 16px;">★★★★☆ <span style="color: #333;">3.9 (320 reviews)</span></p>
+
+    
+<div style="margin: 15px 0; background-color: #fff7e6; padding: 15px; border-radius: 5px; font-size: 16px;">
+    <span style="display: inline-block; margin-right: 20px;">
+      <p style="color: red; margin: 0;"><strong>$8.00</strong></p>
+      <p style="color: #666; font-size: 13px; margin: 0;">100-199 pcs</p>
+    </span>
+    <span style="margin: 0 10px;font-size:xx-large;">|</span>
+    <span style="display: inline-block; margin-right: 20px;">
+      <p style="margin: 0;"><strong>$9.00</strong></p>
+      <p style="color: #666; font-size: 13px; margin: 0;">50-99 pcs</p>
+    </span>
+    <span style="margin: 0 10px;font-size:xx-large;">|</span>
+    <span style="display: inline-block; margin-right: 20px;">
+      <p style="margin: 0;"><strong>$7.80</strong></p>
+      <p style="color: #666; font-size: 13px; margin: 0;">200+ pcs</p>
+    </span>
+    <span style="display: inline-block; background: #f0f0f0; padding: 6px 12px; font-size: 13px; border-radius: 3px; margin-left: 15px;">654 sold</span>
+  </div>
+  
+
+        <table style="font-size: 14px; width: 100%;">
+          <tr><td><strong>Price:</strong></td><td>Negotiable</td></tr>
+          <tr><td><strong>Type:</strong></td><td>Classic shoes</td></tr>
+          <tr><td><strong>Material:</strong></td><td>Plastic material</td></tr>
+          <tr><td><strong>Design:</strong></td><td>Modern idea</td></tr>
+          <tr><td><strong>Customization:</strong></td><td>Custom logo & packaging</td></tr>
+          <tr><td><strong>Protection:</strong></td><td>Refund Policy</td></tr>
+          <tr><td><strong>Warranty:</strong></td><td>2 years full warranty</td></tr>
+        </table>
+      </div>
+
+      <!-- Supplier Section -->
+      <div style="flex: 1;">
+        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px;">
+          <p style="font-weight: bold;">Supplier</p>
+          <p>GuangPi Trading LLC</p>
+          <p><img src="https://www.freeiconspng.com/thumbs/germany-flag/icons-of-germany-flag-fatherland-icon-png-3.png" style="vertical-align: middle;width: 20px;height: 20px;"> Germany, Berlin</p>
+          <p><img src="https://static.vecteezy.com/system/resources/thumbnails/022/936/358/small_2x/shield-icon-antivirus-icon-png.png" style="vertical-align: middle;width: 20px;height: 20px;"> Verified Seller</p>
+          <p><img src="https://cdn-icons-png.freepik.com/512/1077/1077030.png" style="vertical-align: middle;width: 20px;height: 20px;"> Worldwide Shipping</p>
+          <button style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; margin-top: 10px;">Send Inquiry</button>
+          <button style="width: 100%; padding: 10px; background-color: #f0f0f0; color: black; border: none; border-radius: 3px; margin-top: 5px;">Seller's profile</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Description and You May Like Side-by-Side -->
+<!-- Description and You May Like Side-by-Side -->
+<div style="display: flex; gap: 20px; margin-top: 30px;">
+
+    <!-- Description -->
+    <div style="flex: 2;">
+      <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px;">
+        
+        <!-- Tabs -->
+        <div style="display: flex; gap: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; font-weight: bold;">
+          <div style="color: #007bff;">Description</div>
+          <div>Reviews</div>
+          <div>Shipping</div>
+          <div>About seller</div>
+        </div>
+  
+        <!-- Description Content -->
+        <div style="margin-top: 10px; font-size: 14px; line-height: 1.6;">
+          <p>
+            This high-performance men's apparel set is crafted with precision to provide comfort, durability, and modern style.
+            Whether you're hitting the court or walking the streets, our design ensures you look sharp while feeling relaxed.
+            Made from breathable fabrics and engineered to withstand daily wear, this set combines functionality and fashion seamlessly.
+          </p>
+  
+          <p>
+            Perfect for both casual and semi-formal settings, it features a sleek silhouette, reinforced stitching, and colorfast material
+            that keeps looking great wash after wash. Pair it with your favorite sneakers or formal shoes — versatility is built in.
+          </p>
+  
+          <!-- Grid-style Specs Table with Borders -->
+          <div style="display: table; width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <div style="display: table-row; border-top: 1px solid #e0e0e0;">
+              <div style="display: table-cell; background-color: #f9f9f9; padding: 8px; border-right: 1px solid #e0e0e0; width: 160px;">Model</div>
+              <div style="display: table-cell; padding: 8px;">#876867</div>
+            </div>
+            <div style="display: table-row; border-top: 1px solid #e0e0e0;">
+              <div style="display: table-cell; background-color: #f9f9f9; padding: 8px; border-right: 1px solid #e0e0e0;">Certificate</div>
+              <div style="display: table-cell; padding: 8px;">ISO-898221212</div>
+            </div>
+            <div style="display: table-row; border-top: 1px solid #e0e0e0;">
+              <div style="display: table-cell; background-color: #f9f9f9; padding: 8px; border-right: 1px solid #e0e0e0;">Dimension</div>
+              <div style="display: table-cell; padding: 8px;">34mm x 45mm x 19mm</div>
+            </div>
+            <div style="display: table-row; border-top: 1px solid #e0e0e0;">
+              <div style="display: table-cell; background-color: #f9f9f9; padding: 8px; border-right: 1px solid #e0e0e0;">Memory</div>
+              <div style="display: table-cell; padding: 8px;">36GB RAM</div>
+            </div>
+            <div style="display: table-row; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;">
+              <div style="display: table-cell; background-color: #f9f9f9; padding: 8px; border-right: 1px solid #e0e0e0;">Style</div>
+              <div style="display: table-cell; padding: 8px;">Contemporary / Sporty</div>
+            </div>
+          </div>
+  
+          <!-- Features List -->
+          <ul style="margin-top: 15px; padding-left: 20px;">
+            <li>High-quality breathable fabric for all-day comfort</li>
+            <li>Reinforced stitching for extra durability</li>
+            <li>Modern design suitable for multiple occasions</li>
+            <li>Machine-wash safe with colorfast technology</li>
+            <li>Eco-friendly packaging and materials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  
+      <!-- You May Like -->
+      <div style="display: flex;">
+        <!-- Main content area (adjust or add your content here) -->
+        <div style="flex: 1; margin-right: 20px;">
+          <!-- Your main content goes here -->
+        </div>
+      
+        <!-- Right sidebar: You may like section -->
+        <div style="width: 280px;">
+          <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px;">
+            <h3 style="margin-bottom: 15px;">You may like</h3>
+            <div>
+              <!-- Item -->
+              <div style="display: flex; margin-bottom: 15px;">
+                <img src="https://www.promotionalwears.com/image/cache/catalog/data/branded-gifts/pebble/ppfb56/nomad-calling-smart-watch-black-500x500.png" style="width: 80px; height: 80px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+                <div>
+                  <p style="font-size: 13px; margin: 0 0 4px 0;">Smartwatch with fitness tracker</p>
+                  <p style="font-size: 12px; color: #777; margin: 0;">$459.93</p>
+                </div>
+              </div>
+      
+              <!-- Item -->
+              <div style="display: flex; margin-bottom: 15px;">
+                <img src="https://jamesandco.in/wp-content/uploads/2024/12/Earbuds-1-8.png" style="width: 80px; height: 80px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+                <div>
+                  <p style="font-size: 13px; margin: 0 0 4px 0;">Bluetooth home speaker with deep bass</p>
+                  <p style="font-size: 12px; color: #777; margin: 0;">$141.90</p>
+                </div>
+              </div>
+      
+              <!-- Item -->
+              <div style="display: flex; margin-bottom: 15px;">
+                <img src="https://img.archiexpo.com/images_ae/photo-mg/160929-14696007.jpg" style="width: 80px; height: 80px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+                <div>
+                  <p style="font-size: 13px; margin: 0 0 4px 0;">Modern ceramic table lamp</p>
+                  <p style="font-size: 12px; color: #777; margin: 0;">$34.55</p>
+                </div>
+              </div>
+      
+              <!-- Item -->
+              <div style="display: flex;">
+                <img src="https://jamesandco.in/wp-content/uploads/2024/12/Earbuds-1-8.png" style="width: 80px; height: 80px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+                <div>
+                  <p style="font-size: 13px; margin: 0 0 4px 0;">Bluetooth home speaker with deep bass</p>
+                  <p style="font-size: 12px; color: #777; margin: 0;">$141.90</p>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+    </div>
+
+  </div>
+
+</body>
+    
+<div class="RecomendedItems-section">
+    <h2>Recommended for you</h2>
+    <div class="RecomendedItems-grid">
+      <div class="RecomendedItems-card">
+        <img src="https://www.cremme.com.au/cdn/shop/products/TShirt-Black-1.jpg?v=1680316412" alt="Product">
+        <h3>$10.30</h3>
+        <p>T-shirt with multiple colours for man</p>
+      </div>
+   
+      <div class="RecomendedItems-card">
+        <img src="https://syedcorporation.pk/wp-content/uploads/2024/02/S800-300x300.png" alt="Product">
+        <h3>$299.93</h3>
+        <p>4K Smart TV with built-in app</p>
+      </div>
+      <div class="RecomendedItems-card">
+        <img src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/91/8756061/1.jpg?4861" alt="Product">
+        <h3>$25.93</h3>
+        <p>Classic blue hoodie for winter</p>
+      </div> 
+
+      <div class="RecomendedItems-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03mY0Gi-7bAY1Q3YYs_L0fTQbHm6gV8w9oQ&s" alt="Product">
+        <h3>$59.95</h3>
+        <p>Wireless security camera for home</p>
+      </div>
+
+      <div class="RecomendedItems-card">
+        <img src="https://png.pngtree.com/png-vector/20240804/ourmid/pngtree-minimalist-planter-with-fresh-plant-isolated-on-transparent-background-png-image_13184444.png" alt="Product">
+        <h3>$39.96</h3>
+        <p>Minimalist indoor plant pot</p>
+      </div>
+    </div>
+    <!-- Promo Banner -->
+<div style="background:#0d6efd;color:white;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;margin:0 0 2rem 0;border-radius:8px;position:relative;left:50%;right:50%;transform:translateX(-50%);margin-top: 20px;">
+    <p style="margin:0;">Super discount on more than 100 USD<br><small>Have you ever finally just write dummy info</small></p>
+    <button style="background:orange;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">Shop now</button>
+  </div>
+    <!--Footer-->
+    <div style="background-color: #ffffff; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 14px; color: #555;margin-top: 10px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+          
+          <!-- Brand and social -->
+          <div style="flex: 1; min-width: 200px; margin-bottom: 10px;">
+            <h3 style="color: #1E40AF; font-size: 20px; margin-bottom: 10px;"><i class="fas fa-lock" style="margin-right: 5px;"></i>Store</h3>
+            <p style="margin-bottom: 15px;">Best information about the company goes here but now lorem ipsum is</p>
+            <div>
+              <img src="https://img.icons8.com/ios-filled/20/000000/facebook.png" style="margin-right: 10px;">
+              <img src="https://img.icons8.com/ios-filled/20/000000/twitter.png" style="margin-right: 10px;">
+              <img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" style="margin-right: 10px;">
+              <img src="https://img.icons8.com/ios-filled/20/000000/youtube-play.png" style="margin-right: 10px;">
+              <img src="https://img.icons8.com/ios-filled/20/000000/email.png">
+            </div>
+          </div>
+      
+          <!-- Columns -->
+          <div style="flex: 4; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      
+            <div style="min-width: 120px;">
+              <h4 style="margin-bottom: 10px;">About</h4>
+              <p>About Us</p>
+              <p>Find store</p>
+              <p>Categories</p>
+              <p>Blogs</p>
+            </div>
+      
+            <div style="min-width: 120px;">
+              <h4 style="margin-bottom: 10px;">Partnership</h4>
+              <p>About Us</p>
+              <p>Find store</p>
+              <p>Categories</p>
+              <p>Blogs</p>
+            </div>
+      
+            <div style="min-width: 120px;">
+              <h4 style="margin-bottom: 10px;">Information</h4>
+              <p>Help Center</p>
+              <p>Money Refund</p>
+              <p>Shipping</p>
+              <p>Contact us</p>
+            </div>
+      
+            <div style="min-width: 120px;">
+              <h4 style="margin-bottom: 10px;">For users</h4>
+              <p>Login</p>
+              <p>Register</p>
+              <p>Settings</p>
+              <p>My Orders</p>
+            </div>
+      
+            <div style="min-width: 120px;">
+              <h4 style="margin-bottom: 10px;">Get app</h4>
+            
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/200px-Google_Play_Store_badge_EN.svg.png" style="width: 120px;">
+            </div>
+          </div>
+        </div>
+    </div>
+          <!-- Bottom bar -->
+          <div style="text-align: center; font-size: 13px; margin-top: 40px; color: #9b9797;">
+            <p>© 2023 Ecommerce.</p>
+            <p><img src="https://flagcdn.com/us.svg" style="width: 20px; vertical-align: middle; margin-right: 5px;"> English</p>
+        
+        </div>
+</div>
+</html>
+
+  
