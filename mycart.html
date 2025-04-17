@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Cart</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+
+   <!-- Header -->
+   <header>
+    <nav>
+        <div class="logo">Store</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button>   
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="nav-icons">
+            <a href="web.html" title="Home">
+                <i class="fas fa-home"></i> Home
+            </a>
+
+            <a href="message.html" title="Message">
+                <i class="fas fa-envelope"></i> Message
+            </a>
+
+            <a href="productdetail.html" title="Orders">
+                <i class="fas fa-box-open"></i> Orders
+            </a>
+            
+            <a href="mycart.html" title="My Cart">
+                <i class="fas fa-shopping-cart"></i> My Cart
+            </a>
+        </div>
+    </nav>
+</header>
+
+<!-- Cart Section -->
+<div style="display:flex;gap:2rem;padding:2rem;max-width:1200px;margin:auto;align-items:flex-start;">
+
+  <!-- Left: Cart Items -->
+  <div style="flex:2;background:white;padding:4rem;border-radius:8px;max-width:800px;">
+    <h3>My cart (3)</h3>
+
+    <!-- Cart Item 1 -->
+    <div style="border-bottom:1px solid #ddd;padding:1rem 0;display:flex;gap:1rem;align-items:flex-start;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHMzlWzDlcx4AmIXGzIf1R2E-bz21KVSTIg&s" alt="Product Image" style="width:80px;height:90px;object-fit:cover;border-radius:6px;">
+      <div style="flex:1;">
+        <p style="margin:0;font-weight:bold;">T-shirts with multiple colors, for men and lady</p>
+        <p style="margin:4px 0;font-size:0.9rem;">Size: medium, Color: blue, Material: Plastic</p>
+        <p style="margin:4px 0;font-size:0.8rem;">Seller: Artel Market</p>
+        <button style="margin-right:10px;color:red;background:none;border:none;cursor:pointer;">Remove</button>
+        <button style="background:none;border:1px solid #ccc;padding:5px 10px;border-radius:4px;cursor:pointer;">Save for later</button>
+      </div>
+      <div style="text-align:right;">
+        <p style="margin:0;font-weight:bold;">$79.99</p>
+        <label>Qty: <input type="number" value="1" style="width:50px;"></label>
+      </div>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div style="border-bottom:1px solid #ddd;padding:1rem 0;display:flex;gap:1rem;align-items:flex-start;">
+      <img src="https://i.pinimg.com/564x/73/bc/eb/73bceb57686fe3c5855ec518e6f3c764.jpg" alt="Product Image" style="width:80px;height:90px;object-fit:cover;border-radius:6px;">
+      <div style="flex:1;">
+        <p style="margin:0;font-weight:bold;">Decorative Wall Hanging for all seasons</p>
+        <p style="margin:4px 0;font-size:0.9rem;">Size: 42cm x 60cm, Color: black, Material: Leather</p>
+        <p style="margin:4px 0;font-size:0.8rem;">Seller: Sneaker Hub</p>
+        
+        <button style="margin-right:10px;color:red;background:none;border:none;cursor:pointer;">Remove</button>
+        <button style="background:none;border:1px solid #ccc;padding:5px 10px;border-radius:4px;cursor:pointer;">Save for later</button>
+      </div>
+      <div style="text-align:right;">
+        <p style="margin:0;font-weight:bold;">$120.00</p>
+        <label>Qty: <input type="number" value="2" style="width:50px;"></label>
+      </div>
+    </div>
+
+    <!-- Cart Item 3 -->
+    <div style="border-bottom:1px solid #ddd;padding:1rem 0;display:flex;gap:1rem;align-items:flex-start;">
+      <img src="https://imrangames.pk/wp-content/uploads/2024/05/ezgif-6-3245405f53.jpg" alt="Product Image" style="width:80px;height:90px;object-fit:cover;border-radius:6px;">
+      <div style="flex:1;">
+        <p style="margin:0;font-weight:bold;">Wireless Headphones with Noise Cancellation</p>
+        <p style="margin:4px 0;font-size:0.9rem;">Color: Gray, Type: Over-Ear</p>
+        <p style="margin:4px 0;font-size:0.8rem;">Seller: Audio World</p>
+        <button style="margin-right:10px;color:red;background:none;border:none;cursor:pointer;">Remove</button>
+        <button style="background:none;border:1px solid #ccc;padding:5px 10px;border-radius:4px;cursor:pointer;">Save for later</button>
+      </div>
+      <div style="text-align:right;">
+        <p style="margin:0;font-weight:bold;">$199.00</p>
+        <label>Qty: <input type="number" value="1" style="width:50px;"></label>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div style="margin-top:1rem;">
+      <button style="margin-right:10px;background:#0d6efd;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;">Back to shop</button>
+      <button style="background:#dc3545;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;">Remove all</button>
+    </div>
+  </div>
+
+  <!-- Right: Summary -->
+  <div style="flex:1;background:#f1f3f5;padding:4rem;border-radius:8px;max-width:350px;">
+    <h4>Have a coupon?</h4>
+    <input type="text" placeholder="Add coupon" style="padding:8px;width:70%;">
+    <button style="padding:8px;background:#0d6efd;color:white;border:none;border-radius:4px;cursor:pointer;">Apply</button>
+
+    <div style="margin-top:1rem;">
+      <p>Subtotal: <strong style="float:right;">$403.97</strong></p>
+      <p>Discount: <strong style="float:right;color:green;">-$140.00</strong></p>
+      <p>Tax: <strong style="float:right;">$1.60</strong></p>
+      <hr>
+      <p style="font-weight:bold;">Total: <strong style="float:right;">$135.57</strong></p>
+    </div>
+
+    <button style="width:100%;margin-top:1rem;padding:10px;background:green;color:white;border:none;border-radius:5px;cursor:pointer;">Checkout</button>
+  </div>
+
+</div>
+
+<!-- Saved for Later -->
+<div style="padding:0 2rem 2rem;">
+  <h3>Saved for later</h3>
+  <div style="display:flex;gap:1rem;overflow-x:auto;">
+    <!-- Product Card 1 -->
+    <div style="background:white;width:180px;padding:1rem;text-align:center;border-radius:8px;">
+      <img src="https://store.channeltek.com/wp-content/uploads/2020/10/1506617134000_IMG_874181.jpg" style="width:100%;border-radius:8px;">
+      <p style="margin:0.5rem 0;font-weight:bold;">$99.50</p>
+      <p style="font-size:0.9rem;">GoPro HERO6 4K Action Camera - Black</p>
+      <button style="margin-top:0.5rem;background:#0d6efd;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;">Move to cart</button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div style="background:white;width:180px;padding:1rem;text-align:center;border-radius:8px;">
+      <img src="https://5.imimg.com/data5/ECOM/Default/2024/8/440034586/YT/EF/FO/47699750/61vuvu94rnl-500x500.jpg" style="width:100%;border-radius:8px;">
+      <p style="margin:0.5rem 0;font-weight:bold;">$99.50</p>
+      <p style="font-size:0.9rem;">iPhone 13 - Midnight</p>
+      <button style="margin-top:0.5rem;background:#0d6efd;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;">Move to cart</button>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div style="background:white;width:180px;padding:1rem;text-align:center;border-radius:8px;">
+      <img src="https://fastshoppa.com/wp-content/uploads/2023/05/Oraimo-Silver-Edition-Smart-Watch-IP68-Waterproof.png" style="width:100%;border-radius:8px;">
+      <p style="margin:0.5rem 0;font-weight:bold;">$99.50</p>
+      <p style="font-size:0.9rem;">Smart Watch Silver Edition</p>
+      <button style="margin-top:0.5rem;background:#0d6efd;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;">Move to cart</button>
+    </div>
+
+    <!-- Product Card 4 (add more as needed) -->
+    <div style="background:white;width:180px;padding:1rem;text-align:center;border-radius:8px;">
+      <img src="https://static3.webx.pk/files/1425/Images/pri1-1425-1911670-041223115504879.jpg" style="width:100%;border-radius:8px;">
+      <p style="margin:0.5rem 0;font-weight:bold;">$99.50</p>
+      <p style="font-size:0.9rem;">14-inch Slim Laptop with Silver Finish</p>      
+      <button style="margin-top:0.5rem;background:#0d6efd;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;">Move to cart</button>
+    </div>
+
+    <div style="background:white;width:180px;padding:1rem;text-align:center;border-radius:8px;">
+      <img src="https://leyjao.pk/images/detailed/305/WhatsApp_Image_2022-11-06_at_3.09.58_AM__3_-removebg-preview.png" style="width:100%;border-radius:8px;">
+      <p style="margin:0.5rem 0;font-weight:bold;">$99.50</p>
+      <p style="font-size:0.9rem;">Elegant Ladies Handbag in Silver Finish</p>
+      
+      <button style="margin-top:0.5rem;background:#0d6efd;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;">Move to cart</button>
+    </div>
+    
+  </div>
+</div
+
+  
+<!-- Promo Banner -->
+<div style="background:#0d6efd;color:white;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;margin:0 0 2rem 0;border-radius:8px;width:100vw;position:relative;left:50%;right:50%;transform:translateX(-50%);">
+  <p style="margin:0;">Super discount on more than 100 USD<br><small>Have you ever finally just write dummy info</small></p>
+  <button style="background:orange;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">Shop now</button>
+</div>
+
+
+ <!--Footer-->
+ <div style="background-color: #ffffff; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 14px; color: #555;">
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+    
+    <!-- Brand and social -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 10px;">
+      <h3 style="color: #1E40AF; font-size: 20px; margin-bottom: 10px;"><i class="fas fa-lock" style="margin-right: 5px;"></i>Store</h3>
+      <p style="margin-bottom: 15px;">Best information about the company goes here but now lorem ipsum is</p>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/20/000000/facebook.png" style="margin-right: 10px;">
+        <img src="https://img.icons8.com/ios-filled/20/000000/twitter.png" style="margin-right: 10px;">
+        <img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" style="margin-right: 10px;">
+        <img src="https://img.icons8.com/ios-filled/20/000000/youtube-play.png" style="margin-right: 10px;">
+        <img src="https://img.icons8.com/ios-filled/20/000000/email.png">
+      </div>
+    </div>
+
+    <!-- Columns -->
+    <div style="flex: 4; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+
+      <div style="min-width: 120px;">
+        <h4 style="margin-bottom: 10px;">About</h4>
+        <p>About Us</p>
+        <p>Find store</p>
+        <p>Categories</p>
+        <p>Blogs</p>
+      </div>
+
+      <div style="min-width: 120px;">
+        <h4 style="margin-bottom: 10px;">Partnership</h4>
+        <p>About Us</p>
+        <p>Find store</p>
+        <p>Categories</p>
+        <p>Blogs</p>
+      </div>
+
+      <div style="min-width: 120px;">
+        <h4 style="margin-bottom: 10px;">Information</h4>
+        <p>Help Center</p>
+        <p>Money Refund</p>
+        <p>Shipping</p>
+        <p>Contact us</p>
+      </div>
+
+      <div style="min-width: 120px;">
+        <h4 style="margin-bottom: 10px;">For users</h4>
+        <p>Login</p>
+        <p>Register</p>
+        <p>Settings</p>
+        <p>My Orders</p>
+      </div>
+
+      <div style="min-width: 120px;">
+        <h4 style="margin-bottom: 10px;">Get app</h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/200px-Google_Play_Store_badge_EN.svg.png" style="width: 120px;">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Bottom bar -->
+  <div style="text-align: center; font-size: 13px; margin-top: 40px; color: #9b9797;">
+    <p>© 2023 Ecommerce.</p>
+    <p><img src="https://flagcdn.com/us.svg" style="width: 20px; vertical-align: middle; margin-right: 5px;"> English</p>
+
+</div> 
